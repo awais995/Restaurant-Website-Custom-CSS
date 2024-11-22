@@ -1,0 +1,182 @@
+.menuSection {
+  padding-top: 4rem; 
+  padding-bottom: 4rem; 
+  background-color: #f9f9f9;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto; 
+  margin-right: auto; 
+  padding-left: 1rem; 
+  padding-right: 1rem; 
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 2rem; 
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 4rem; 
+    padding-right: 4rem; 
+  }
+}
+
+.heading {
+  font-size: 1.875rem; 
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem; 
+  animation: slideInFromTop 1s ease-in-out forwards;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 2.25rem; 
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading {
+    font-size: 3rem;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem; 
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
+.card {
+  background-color: white;
+  padding: 1.5rem; 
+  border-radius: 0.5rem; 
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1); /* equivalent to shadow-lg */
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.image {
+  height: 14rem; 
+  border-radius: 0.5rem; 
+  margin-bottom: 1rem;
+  object-fit: cover;
+  width: 100%;
+  animation: zoomIn 1s ease-in-out forwards;
+}
+
+.cardTitle {
+  font-size: 1.5rem; 
+  font-weight: bold;
+  margin-bottom: 1rem; 
+  display: flex;
+  justify-content: center;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.cardText {
+  color: #4a5568; 
+  text-align: justify;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem; 
+}
+
+.button {
+  background-color: #3182ce;
+  color: white;
+  padding: 0.75rem 1.5rem; 
+  border-radius: 0.5rem; 
+  transition: background-color 0.3s, transform 0.3s;
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.button:hover {
+  background-color: #2c7a7b;
+  transform: scale(1.05);
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+@media (min-width: 600px) {
+  .menuSection {
+    padding-top: 3rem; 
+    padding-bottom: 3rem; 
+  }
+}
+
+@media (min-width: 768px) {
+  .grid {
+    gap: 2.5rem; 
+  }
+}
+
+@media (min-width: 992px) {
+  .menuSection {
+    padding-top: 4rem; 
+    padding-bottom: 4rem; 
+  }
+}

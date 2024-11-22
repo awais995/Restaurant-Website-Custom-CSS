@@ -1,0 +1,147 @@
+.menuSection {
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  width: 100%;
+  overflow-x: hidden; 
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px; 
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  animation: slideInFromTop 1s ease-in-out forwards;
+}
+
+.menuGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .menuGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .menuGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.menuItem {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box; 
+  animation: fadeInUp 0.5s ease-in-out forwards;
+}
+
+.image {
+  width: 100%;
+  height: 14rem;
+  border-radius: 0.375rem;
+  margin-bottom: 1rem;
+  object-fit: cover; 
+  animation: zoomIn 0.5s ease-in-out forwards;
+}
+
+.dishTitle {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.dishDescription {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  color: #4a4a4a;
+  font-size: 1rem; 
+  margin-bottom: 1.5rem;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.orderButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  animation: fadeInUp 0.5s ease-in-out forwards;
+}
+
+.orderButton button {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.orderButton button:hover {
+  background-color: #16a34a;
+  transform: scale(1.05); 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

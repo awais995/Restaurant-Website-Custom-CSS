@@ -1,0 +1,124 @@
+.navbar {
+  background-color: #2d3748; 
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  right: 0;
+  margin: 0; 
+  padding: 0; 
+  z-index: 1000; 
+}
+
+.navbarContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px; 
+}
+
+.navbarLogo {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.navbarToggle {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem; 
+}
+
+.menuButton {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.menuIcon {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.menuLine {
+  width: 24px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0; 
+  left: 80;
+  right: 0;
+  background-color: #2d3748;
+  transform: translateY(-120%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 100;
+}
+
+.menuActive {
+  transform: translateY(0);
+}
+
+.menuItem {
+  margin-top: 1rem;
+  list-style: none;
+}
+
+.menuLink {
+  color: #ffffff;
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.menuLink:hover {
+  background-color: #4a5568;
+  border-radius: 4px;
+}
+
+.menuCloseButton {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+
+@media (min-width: 768px) {
+  .menu {
+    flex-direction: row;
+    position: static;
+    transform: translateY(0);
+    background-color: transparent;
+    align-items: center;
+    top: unset;
+  }
+
+  .menuItem {
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+
+  .menuLink {
+    font-size: 1rem;
+  }
+
+  .menuCloseButton {
+    display: none;
+  }
+
+  .navbarToggle {
+    display: none;
+  }
+}
