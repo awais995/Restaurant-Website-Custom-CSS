@@ -24,7 +24,7 @@ const Menu = () => {
               A curry made with lotus root slices, cooked in a spicy tomato and onion gravy.
             </p>
             <div className={styles.buttonContainer}>
-              <Link href="/Menu">
+              <Link href="/menu">
                 <button className={styles.button}>Check Menu</button>
               </Link>
             </div>
@@ -43,7 +43,7 @@ const Menu = () => {
               A flavorful curry made with tender pieces of meat (usually mutton or beef) and potatoes, cooked in a spiced gravy.
             </p>
             <div className={styles.buttonContainer}>
-              <Link href="/Menu">
+              <Link href="/menu">
                 <button className={styles.button}>Check Menu</button>
               </Link>
             </div>
@@ -62,7 +62,7 @@ const Menu = () => {
               A rice pudding made with milk, sugar, and cardamom, garnished with nuts and saffron.
             </p>
             <div className={styles.buttonContainer}>
-              <Link href="/Menu">
+              <Link href="/menu">
                 <button className={styles.button}>Check Menu</button>
               </Link>
             </div>
